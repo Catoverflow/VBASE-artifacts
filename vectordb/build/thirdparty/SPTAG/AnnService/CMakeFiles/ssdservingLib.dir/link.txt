@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../thirdparty/SPTAG/Release/libssdservingLib.a  CMakeFiles/ssdservingLib.dir/src/SSDServing/main.cpp.o
+/usr/bin/ranlib ../../../../thirdparty/SPTAG/Release/libssdservingLib.a

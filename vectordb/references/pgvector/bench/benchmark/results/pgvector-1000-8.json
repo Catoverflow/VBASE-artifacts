@@ -1,0 +1,27 @@
+{
+  "name": "pgvector",
+  "date": "2021-08-13T09:26:27.932Z",
+  "version": null,
+  "results": [
+    {
+      "name": "without index",
+      "ops": 4019,
+      "margin": 4.27,
+      "percentSlower": 15.23
+    },
+    {
+      "name": "with index",
+      "ops": 4741,
+      "margin": 5.39,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "with index",
+    "index": 1
+  },
+  "slowest": {
+    "name": "without index",
+    "index": 0
+  }
+}

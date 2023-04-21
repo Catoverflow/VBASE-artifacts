@@ -1,0 +1,146 @@
+make[1]: Entering directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[  2%] Built target DistanceUtils
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 18%] Built target libzstd_static
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 31%] Built target SPTAGLibStatic
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 40%] Built target vectordb
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 56%] Built target libzstd_shared
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 58%] Built target zstd-frugal
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 59%] Copying manpage zstd.1
+make[2]: Leaving directory '/vectordb/build'
+[ 59%] Built target zstd.1
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 59%] Creating unzstd.1 symlink
+make[2]: Leaving directory '/vectordb/build'
+[ 59%] Built target unzstd.1
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 64%] Built target zstd
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 65%] Creating zstdmt symlink
+make[2]: Leaving directory '/vectordb/build'
+[ 65%] Built target zstdmt
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 66%] Creating zstdcat.1 symlink
+make[2]: Leaving directory '/vectordb/build'
+[ 66%] Built target zstdcat.1
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 66%] Creating zstdcat symlink
+make[2]: Leaving directory '/vectordb/build'
+[ 66%] Built target zstdcat
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 67%] Creating unzstd symlink
+make[2]: Leaving directory '/vectordb/build'
+[ 67%] Built target unzstd
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 67%] Copying manpage zstdgrep.1
+make[2]: Leaving directory '/vectordb/build'
+[ 67%] Built target zstdgrep.1
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+make[2]: Entering directory '/vectordb/build'
+[ 68%] Copying manpage zstdless.1
+make[2]: Leaving directory '/vectordb/build'
+[ 68%] Built target zstdless.1
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 81%] Built target SPTAGLib
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 82%] Built target ssdserving
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 83%] Built target ssdservingLib
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 90%] Built target _SPTAGClient
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 92%] Built target _SPTAG
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[ 93%] Built target JAVASPTAG
+make[2]: Entering directory '/vectordb/build'
+make[2]: Leaving directory '/vectordb/build'
+[100%] Built target JAVASPTAGClient
+make[1]: Leaving directory '/vectordb/build'
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /usr/local/lib/cmake/zstd/zstdTargets.cmake
+-- Installing: /usr/local/lib/cmake/zstd/zstdTargets-release.cmake
+-- Up-to-date: /usr/local/lib/cmake/zstd/zstdConfig.cmake
+-- Up-to-date: /usr/local/lib/cmake/zstd/zstdConfigVersion.cmake
+-- Up-to-date: /usr/local/lib/pkgconfig/libzstd.pc
+-- Up-to-date: /usr/local/include/zstd.h
+-- Up-to-date: /usr/local/include/zdict.h
+-- Up-to-date: /usr/local/include/zstd_errors.h
+-- Up-to-date: /usr/local/lib/libzstd.so.1.5.2
+-- Up-to-date: /usr/local/lib/libzstd.so.1
+-- Up-to-date: /usr/local/lib/libzstd.so
+-- Up-to-date: /usr/local/lib/libzstd.a
+-- Up-to-date: /usr/local/bin/zstd
+-- Up-to-date: /usr/local/bin/zstdcat
+-- Up-to-date: /usr/local/bin/unzstd
+-- Up-to-date: /usr/local/bin/zstdgrep
+-- Up-to-date: /usr/local/bin/zstdless
+-- Installing: /usr/local/share/man/man1/zstd.1
+-- Up-to-date: /usr/local/share/man/man1/zstdcat.1
+-- Up-to-date: /usr/local/share/man/man1/unzstd.1
+-- Installing: /usr/local/share/man/man1/zstdgrep.1
+-- Installing: /usr/local/share/man/man1/zstdless.1
+-- Up-to-date: /usr/local/bin/zstdmt
+-- Up-to-date: /usr/local/lib/libSPTAGLib.so
+-- Up-to-date: /usr/local/lib/libSPTAGLibStatic.a
+-- Up-to-date: /usr/local/lib/libssdservingLib.a
+-- Up-to-date: /usr/local/bin/ssdserving
+-- Installing: /usr/local/lib/_SPTAG.so
+-- Set runtime path of "/usr/local/lib/_SPTAG.so" to ""
+-- Installing: /usr/local/lib/_SPTAGClient.so
+-- Set runtime path of "/usr/local/lib/_SPTAGClient.so" to ""
+-- Installing: /usr/local/bin/SPTAG.py
+-- Installing: /usr/local/bin/SPTAGClient.py
+-- Installing: /usr/local/lib/libJAVASPTAG.so
+-- Set runtime path of "/usr/local/lib/libJAVASPTAG.so" to ""
+-- Installing: /usr/local/lib/libJAVASPTAGClient.so
+-- Set runtime path of "/usr/local/lib/libJAVASPTAGClient.so" to ""
+-- Installing: /usr/local/bin/AnnClient.java
+-- Installing: /usr/local/bin/AnnIndex.java
+-- Installing: /usr/local/bin/BasicResult.java
+-- Installing: /usr/local/bin/Edge.java
+-- Installing: /usr/local/bin/EdgeCompare.java
+-- Installing: /usr/local/bin/JAVASPTAG.java
+-- Installing: /usr/local/bin/JAVASPTAGClient.java
+-- Installing: /usr/local/bin/JAVASPTAGClientJNI.java
+-- Installing: /usr/local/bin/JAVASPTAGJNI.java
+-- Installing: /usr/local/bin/NodeDistPair.java
+-- Up-to-date: /u01/app/postgres/product/13.4/share/extension/vectordb.control
+-- Up-to-date: /u01/app/postgres/product/13.4/share/extension/vectordb.sql
+-- Up-to-date: /u01/app/postgres/product/13.4/share/extension/vectordb--0.1.0.sql
+-- Installing: /u01/app/postgres/product/13.4/lib/vectordb.so
+-- Set runtime path of "/u01/app/postgres/product/13.4/lib/vectordb.so" to ""
