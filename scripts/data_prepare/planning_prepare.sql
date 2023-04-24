@@ -1,0 +1,15 @@
+drop database if exists planning_test;
+create database planning_test;
+\c planning_test;
+create extension vectordb;
+create table Recipe (image_embedding float8[100]);
+alter table Recipe alter column image_embedding set storage plain;
+copy Recipe from '/planning/tmp/datasource_1col.tsv' delimiter E'\t' csv;
+alter table Recipe add column recipe_id BIGSERIAL PRIMARY KEY;
+alter table Recipe add column popularity int;
+update Recipe set popularity = 330922*random();
+create table Recipe_scalar (image_embedding float8[1024], popularity int, recipe_id bigint primary key);
+alter table Recipe_scalar alter column image_embedding set storage plain;
+insert into Recipe_scalar (image_embedding, popularity, recipe_id) select image_embedding, popularity, recipe_id from Recipe;
+create index hnsw_recipe1m on Recipe using hnsw(image_embedding hnsw_vector_inner_product_ops) with (dimension='1024', distmethod=inner_product);
+create index bt_recipe1m_scalar on Recipe_scalar(popularity);

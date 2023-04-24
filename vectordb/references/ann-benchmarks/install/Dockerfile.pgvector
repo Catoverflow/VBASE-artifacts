@@ -1,0 +1,32 @@
+FROM ann-benchmarks
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/references/ann-benchmarks/Shanghai
+
+RUN apt-get update && apt-get install --no-install-recommends -y lsb-release curl gnupg ca-certificates \
+    && sh -c 'echo "deb http://apt.postgresql.org/pub/references/ann-benchmarks/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' \
+    && curl -fsSL https://www.postgresql.org/media/references/ann-benchmarks/keys/ACCC4CF8.asc | apt-key add - \
+    && apt-get update && apt-get install --no-install-recommends -y postgresql postgresql-server-dev-13 \
+    && apt-get clean \
+    && rm -rf /var/lib/references/ann-benchmarks/apt/lists/*
+
+RUN git clone --branch v0.1.7 https://github.com/ankane/pgvector.git \
+    && cd pgvector \
+    && make \
+    && make install \
+    && cd .. \
+    && rm -rf pgvector
+
+RUN pip3 install --no-cache-dir pgvector==0.1.3 psycopg2-binary==2.9.1
+
+RUN pg_ctlcluster 13 main start \
+    && su postgres -c "psql -c \"CREATE ROLE bench LOGIN SUPERUSER PASSWORD 'bench';\"" \
+    && su postgres -c "psql -c \"CREATE EXTENSION vector;\"" \
+    && pg_ctlcluster 13 main stop
+
+RUN echo '#!/bin/bash' >> entrypoint.sh \
+    && echo 'pg_ctlcluster 13 main start' >> entrypoint.sh \
+    && echo 'sleep 5' >> entrypoint.sh \
+    && echo 'python3 run_algorithm.py "$@"' >> entrypoint.sh \
+    && chmod u+x entrypoint.sh
+ENTRYPOINT ["/home/app/entrypoint.sh"]

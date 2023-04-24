@@ -1,0 +1,4 @@
+# Apply a setting to all versions
+# set the minimum and maximum JVM heap size to 26G
+-Xms26g
+-Xmx26g

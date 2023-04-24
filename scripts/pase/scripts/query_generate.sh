@@ -1,0 +1,20 @@
+#/bin/bash
+mkdir /artifacts/scripts/pase/query_run/table5/sql
+mkdir /artifacts/scripts/pase/query_run/table5/result
+mkdir /artifacts/scripts/pase/query_run/table6/sql
+mkdir /artifacts/scripts/pase/query_run/table6/result
+mkdir /artifacts/scripts/pase/query_run/table7/sql
+mkdir /artifacts/scripts/pase/query_run/table7/result
+python3 /artifacts/scripts/pase/query_run/table5/query_1.py
+python3 /artifacts/scripts/pase/query_run/table5/query_2.py
+python3 /artifacts/scripts/pase/query_run/table5/query_3.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.03_k_100.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.3_k_100.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.9_k_100.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.03_k_1000.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.3_k_1000.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.9_k_1000.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.03_k_10000.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.3_k_10000.py
+python3 /artifacts/scripts/pase/query_run/table6/query_selectivity_0.9_k_10000.py
+python3 /artifacts/scripts/pase/query_run/table7/query_range_r.py

@@ -1,0 +1,17 @@
+filters:
+  ".*":
+    reviewers:
+      - xiaofan-luan
+      - yhmo
+      - scsven
+      - fishpenguin
+      - matrixji
+      - ArkaprabhaChakraborty
+    approvers:
+      - xiaofan-luan
+      - yhmo
+      - scsven
+      - fishpenguin
+      - matrixji
+      - ArkaprabhaChakraborty
+

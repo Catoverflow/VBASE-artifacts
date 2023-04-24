@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../thirdparty/SPTAG/Release/libDistanceUtils.a  CMakeFiles/DistanceUtils.dir/src/Core/Common/DistanceUtils.cpp.o CMakeFiles/DistanceUtils.dir/src/Core/Common/SIMDUtils.cpp.o CMakeFiles/DistanceUtils.dir/src/Core/Common/InstructionUtils.cpp.o
+/usr/bin/ranlib ../../../../thirdparty/SPTAG/Release/libDistanceUtils.a

@@ -1,0 +1,5 @@
+*/proto-gen/*
+*/cmake_build/*
+*/build/*
+*/cmake-build*/*
+*/test/*
